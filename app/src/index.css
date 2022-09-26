@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  overflow: hidden;
+}
+
+.App-Container-darkMode {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.App-Container-lightMode {
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.body-container {
+  margin-top: 10em;
+  margin-left: 10em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.each-number-darkMode {
+  width: 20px;
+  background-color: white;
+  margin: 0 5px;
+  position: relative;
+}
+
+.each-number-darkMode > span {
+  color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
