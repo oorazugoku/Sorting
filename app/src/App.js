@@ -9,19 +9,20 @@ function App() {
   const nums = useSelector(state => state.numArray);
 
   const max = Math.max(...nums)
-  console.log(max)
-
 
   return (
     <div className={`App-Container-${theme}`}>
       <NavBarTop />
       <NavBarLeft />
       <div className='body-container'>
-        {nums?.map((each, i)=>(
-          <div className={`each-number-${theme}`} style={{ height: `${each * 200 / max}px`}} key={i}>
-            <span>{each}</span>
-          </div>
-        ))}
+        {nums?.map((each, i) => (
+            <div className='each-number-container' key={i}>
+            <div className={`each-number-${theme}`} style={{ height: `${each * 200 / max}px`}}>
+            </div>
+            <span className='each-number'>{each}</span>
+            </div>
+          )
+        )}
       </div>
     </div>
   );

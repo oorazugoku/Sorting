@@ -48,7 +48,6 @@ const NavBarLeft = () => {
         setSubitted(!submitted);
     };
 
-
     return (
         <>
             <div className={`NavBarLeft-Container-${theme}`}>
