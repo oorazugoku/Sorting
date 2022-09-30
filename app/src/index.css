@@ -92,3 +92,9 @@ form {
 .each-number-lightMode > span {
   color: lightblue;
 }
+
+
+.button-go {
+  position: absolute;
+  top: 30em;
+}
